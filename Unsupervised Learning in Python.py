@@ -1,7 +1,7 @@
 # How many clusters do you see?
 3
 
-# ----------------------------
+# # ------------------------------------------------
 # Import KMeans
 from sklearn.cluster import KMeans
  
@@ -17,7 +17,7 @@ labels = model.predict(new_points)
 # Print cluster labels of new_points
 print(labels)
 
-# ----------------------------
+# # ------------------------------------------------
 # Import pyplot
 import matplotlib.pyplot as plt
  
@@ -39,7 +39,7 @@ centroids_y = centroids[:,1]
 plt.scatter(centroids_x, centroids_y, marker='D', s=50)
 plt.show()
 
-# ----------------------------
+# # ------------------------------------------------
 ks = range(1, 6)
 inertias = []
  
@@ -60,7 +60,7 @@ plt.ylabel('inertia')
 plt.xticks(ks)
 plt.show()
 
-# ----------------------------
+# # ------------------------------------------------
 # Create a KMeans model with 3 clusters: model
 model = KMeans(n_clusters=3)
  
@@ -76,7 +76,7 @@ ct = pd.crosstab(df['labels'], df['varieties'])
 # Display ct
 print(ct)
 
-# ----------------------------
+# # ------------------------------------------------
 # Perform the necessary imports
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
@@ -91,7 +91,7 @@ kmeans = KMeans(n_clusters=4)
 # Create pipeline: pipeline
 pipeline = make_pipeline(scaler, kmeans)
 
-# ----------------------------
+# # ------------------------------------------------
 # Import pandas
 import pandas as pd
  
@@ -110,7 +110,7 @@ ct = pd.crosstab(df['labels'], df['species'])
 # Display ct
 print(ct)
 
-# ----------------------------
+# # ------------------------------------------------
 # Import Normalizer
 from sklearn.preprocessing import Normalizer
  
@@ -126,7 +126,7 @@ pipeline = make_pipeline(normalizer, kmeans)
 # Fit pipeline to the daily price movements
 pipeline.fit(movements)
 
-# ----------------------------
+# ------------------------------------------------
 # Import pandas
 import pandas as pd
  
@@ -139,12 +139,12 @@ df = pd.DataFrame({'labels': labels, 'companies': companies})
 # Display df sorted by cluster label
 print(df.sort_values('labels'))
 
-# ----------------------------
+# ------------------------------------------------
 # How many merges?
 # If there are 5 data samples, how many merge operations will occur in a hierarchical clustering? (To help answer this question, think back to the video, in which Ben walked through an example of hierarchical clustering using 6 countries.)
 4 
 
-# ----------------------------
+# ------------------------------------------------
 # Perform the necessary imports
 from scipy.cluster.hierarchy import linkage, dendrogram
 import matplotlib.pyplot as plt
@@ -602,35 +602,3 @@ similarities = df.dot(artist)
  
 # Display those with highest cosine similarity
 print(similarities.nlargest())
-
-# ------------------------------------------------
-# 
-# ------------------------------------------------
-# 
-# ------------------------------------------------
-# 
-# ------------------------------------------------
-# 
-# ------------------------------------------------
-# 
-# ------------------------------------------------
-# 
-# ------------------------------------------------
-# 
-# ------------------------------------------------
-# 
-# ------------------------------------------------
-# 
-# ------------------------------------------------
-# 
-# ------------------------------------------------
-# 
-# ------------------------------------------------
-# 
-# ------------------------------------------------
-# 
-# ------------------------------------------------
-# 
-# ------------------------------------------------
-# 
-
