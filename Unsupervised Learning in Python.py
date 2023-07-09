@@ -310,7 +310,9 @@ correlation, pvalue = pearsonr(xs, ys)
 print(correlation)
 
 # ------------------------------------------------
-# 
+# Principal components
+Both the plot 1 and plot 3
+
 # ------------------------------------------------
 # 
 # ------------------------------------------------
