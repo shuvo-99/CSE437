@@ -438,7 +438,9 @@ df = pd.DataFrame({'label': labels, 'article': titles})
 print(df.sort_values('label'))
 
 # ------------------------------------------------
-# 
+# Which of the following 2-dimensional arrays are examples of non-negative data?
+1 and 3
+
 # ------------------------------------------------
 # 
 # ------------------------------------------------
