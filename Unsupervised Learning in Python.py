@@ -2,7 +2,6 @@
 3
 
 # ----------------------------
-
 # Import KMeans
 from sklearn.cluster import KMeans
  
